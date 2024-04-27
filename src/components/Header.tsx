@@ -3,7 +3,7 @@ export interface IHeaderProps {}
 import { LogOut } from "react-feather";
 import { useAuth } from "../utils/AuthContext";
 
-export const Header = (props: IHeaderProps) => {
+export const Header = () => {
   const { user, handleUserLogout } = useAuth();
   return (
     <div id="header--wrapper">

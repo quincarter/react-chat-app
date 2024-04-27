@@ -3,7 +3,7 @@ import { useAuth } from "../utils/AuthContext";
 
 export interface IPrivateRoutesProps {}
 
-export const PrivateRoutes = (props: IPrivateRoutesProps) => {
+export const PrivateRoutes = () => {
   const { user } = useAuth();
   return <>{user ? <Outlet /> : <Navigate to="/login" />}</>;
 };

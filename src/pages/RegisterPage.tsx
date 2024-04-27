@@ -9,7 +9,7 @@ export interface IRegistrationCredentials extends ICredentials {
   password2: string;
 }
 
-export const RegisterPage = (props: IRegisterPageProps) => {
+export const RegisterPage = () => {
   const { handleUserRegister } = useAuth();
   const [credentials, setCredentials] = useState<IRegistrationCredentials>({
     email: "",

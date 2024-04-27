@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 export interface IAppProps {}
 
-export const LoginPage = (props: IAppProps) => {
+export const LoginPage = () => {
   const { user, handleUserLogin } = useAuth();
   const navigate = useNavigate();
   const [credentials, setCredentials] = useState<ICredentials>({

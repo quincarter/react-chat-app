@@ -1,4 +1,4 @@
-import { Account, Client, Databases, Query } from "appwrite";
+import { Account, Client, Databases } from "appwrite";
 
 export const PROJECT_ID = "662c1ccc000e288d2fef";
 export const DATABASE_ID = "662c1d5f000af68eae13";

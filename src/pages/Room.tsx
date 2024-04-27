@@ -19,7 +19,7 @@ import { useAuth } from "../utils/AuthContext";
 
 export interface IAppProps {}
 
-export const Room = (props: IAppProps) => {
+export const Room = () => {
   const { user } = useAuth();
   const [messages, setMessages] = useState<Models.Document[]>([]);
   const [messageBody, setMessageBody] = useState("");
@@ -90,8 +90,8 @@ export const Room = (props: IAppProps) => {
     setMessages(response.documents);
   };
 
-  const deleteMessage = (messageId: string) => {
-    const response = databases.deleteDocument(
+  const deleteMessage = async (messageId: string) => {
+    await databases.deleteDocument(
       DATABASE_ID,
       COLLECTION_ID_MESSAGES,
       messageId
