@@ -12,3 +12,5 @@ This is a react chat app built with React + Hooks and AppWrite for the backend.
 - TypeScript
 
 ## Demo
+
+[Live Demo](https://react-chat-app-appwrite.netlify.app/) - This is a working version of the code in this repo. Register for an account to just send messages and get realtime updates. 
